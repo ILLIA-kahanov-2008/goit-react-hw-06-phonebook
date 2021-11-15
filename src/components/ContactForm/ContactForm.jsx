@@ -25,12 +25,7 @@ function ContactForm ({addContact}) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // const newContact = {
-    //   id: shortid(),
-    //   name,
-    //   number,      
-    // };
+    e.preventDefault();    
     setName('');
     setNumber('');
     addContact(name, number);
